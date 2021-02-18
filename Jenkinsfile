@@ -7,7 +7,7 @@ pipeline {
 
         stage ('Clone') {
             steps {
-                git branch: 'master', url: "https://github.com/Ankitp110/FirstWebApp.git"
+                git branch: 'master', url: "https://github.com/Ankitp110/FirstWebAppJava.git"
             }
         }
 
