@@ -24,12 +24,7 @@ pipeline {
             }
         }
 
-        stage('deploying the file ') {
-            steps {
-                sh 'gradle deploy'
-
-            }
-        }
+        
     }
 
 }

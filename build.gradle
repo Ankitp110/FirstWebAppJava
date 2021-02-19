@@ -19,13 +19,7 @@ dependencies {
   testCompile group: 'org.mockito', name: 'mockito-core', version: '3.5.9'
 }
 
-task deploy (dependsOn: war){
-    copy {
-        from "/var/jenkins_home/workspace/FirstWebApp/build/libs"
-        into "/usr/local/tomcat/webapps/FirstWebApp.war"
-        include "*.war"
-    }
-}
+
 
 //gretty.httpPort=8090
 
