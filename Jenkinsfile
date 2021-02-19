@@ -26,7 +26,7 @@ pipeline {
 
         stage('running the app') {
             steps {
-                sh 'gradle appRun'
+                sh 'gradle tomcatStartWar'
 
             }
         }
