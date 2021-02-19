@@ -24,12 +24,12 @@ pipeline {
             }
         }
 
-        stage('running the app') {
+        /* stage('running the app') {
             steps {
                 sh 'gradle tomcatStartWar'
 
             }
-        }
+        } */
     }
 
 }
