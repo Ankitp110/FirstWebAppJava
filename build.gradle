@@ -44,13 +44,13 @@ dependencies {
   testImplementation 'junit:junit:4.7'
 }
 
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            from components.java
-        }
-    }
-}
+// publishing {
+//     publications {
+//         mavenJava(MavenPublication) {
+//             from components.java
+//         }
+//     }
+// }
 
 artifactory {
     contextUrl = 'http://159.65.145.173:8081/artifactory'
