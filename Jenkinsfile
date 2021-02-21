@@ -3,6 +3,11 @@ pipeline {
     tools {
         gradle "gradle6.8.2"
     }
+
+    triggers {
+        pollSCM '* * * * *'
+    }
+
     stages {
 
         stage ('Clone') {
