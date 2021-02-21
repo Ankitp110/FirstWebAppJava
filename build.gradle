@@ -18,7 +18,7 @@ plugins {
 allprojects {
     repositories {
         maven {
-            url "http://159.65.145.173:8081/artifactory/jcenter"
+            url "http://159.65.145.173:8081/artifactory"
         }
     }
 }
