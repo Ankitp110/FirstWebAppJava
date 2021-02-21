@@ -28,9 +28,8 @@ pipeline {
 
             }
         }
-
-        
-        stage (‘Publishing artifacts’) {
+   
+        stage ('CopyArtifacts') {
             script {
                 sh 'scp FirtWebApp.war ankit@128.199.24.137:/var/lib/docker/volumes/jenkins-data/_data/workspace/FirstWebApp/build/libs /home/ankit/FirstWebApp'
             }
