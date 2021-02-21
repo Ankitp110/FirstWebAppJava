@@ -31,7 +31,7 @@ pipeline {
    
         stage ('CopyArtifacts') {
             steps {
-                sh 'scp FirtWebApp.war ankit@128.199.24.137:/var/lib/docker/volumes/jenkins-data/_data/workspace/FirstWebApp/build/libs /home/ankit/FirstWebApp'
+                sh 'scp FirtWebApp.war ankit@128.199.24.137:/var/lib/docker/volumes/jenkins-data/_data/workspace/FirstWebApp/build/libs ankit@128.199.24.137/home/ankit/FirstWebApp'
             }
 
         }
