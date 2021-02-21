@@ -29,12 +29,12 @@ pipeline {
             }
         }
    
-        /* stage ('CopyArtifacts' this is just a show ahdakljm) {
+        stage ('DeployArtifacts') {
             steps {
-                sh 'scp FirtWebApp.war ankit@128.199.24.137:/var/lib/docker/volumes/jenkins-data/_data/workspace/FirstWebApp/build/libs ankit@128.199.24.137:/home/ankit/FirstWebApp'
+                sh 'artifactoryDeploy'
             }
 
-        } */
+        }
     }
 
 }
