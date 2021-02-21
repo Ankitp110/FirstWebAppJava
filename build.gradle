@@ -7,13 +7,13 @@ buildscript {
     }
 }
 
-plugins {
+/* plugins {
     // Apply the java plugin to add support for Java
     id 'war'
     //id 'org.gretty' version '3.0.3'
     //id 'jacoco'
     //id 'org.sonarqube' version '3.0'
-}
+} */
 
 /* allprojects {
     repositories {
@@ -28,6 +28,7 @@ plugins {
 apply plugin: 'com.jfrog.artifactory'
 apply plugin: 'java'
 apply plugin: 'maven-publish'
+apply plugin: 'war'
 
 /* repositories {
     // Use jcenter for resolving dependencies.
