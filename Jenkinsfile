@@ -31,7 +31,7 @@ pipeline {
    
         stage ('DeployArtifacts') {
             steps {
-                sh 'gradle artifactoryDeploy'
+                sh 'gradle artifactoryPublish'
             }
 
         }
