@@ -29,7 +29,7 @@ pipeline {
             }
         }
 
-        stage ('Artifactory configuration') {
+        /* stage ('Artifactory configuration') {
             steps {
                 rtServer (
                     id: "ARTIFACTORY_SERVER",
@@ -71,15 +71,15 @@ pipeline {
                 )
             }
         }
-
+ */
 
    
-        /* stage ('DeployArtifacts') {
+        stage ('DeployArtifacts') {
             steps {
                 sh 'gradle artifactoryPublish'
             }
 
-        } */
+        } 
     }
 
 }
