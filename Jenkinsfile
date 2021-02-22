@@ -63,7 +63,7 @@ pipeline {
                 )
             }
         
-        
+        }
         stage ('Publish build info') {
             steps {
                 rtPublishBuildInfo (
