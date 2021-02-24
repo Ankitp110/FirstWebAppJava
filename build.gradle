@@ -20,7 +20,7 @@ plugins {
 }
 
 docker {
-     name "${project.name}:${project.version}"
+     name "firstwebapp:${project.version}"
      files 'FirstWebApp.war'
 }
 
