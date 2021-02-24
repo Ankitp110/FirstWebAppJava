@@ -43,7 +43,7 @@ apply plugin: 'war'
 apply plugin: "com.palantir.docker-run"
 
 dockerRun {
-    name "FirstWebAppJava"
+    name "myAppJava"
     image "firstwebapp:${project.version}"
     ports '8090:8090'
     clean true
