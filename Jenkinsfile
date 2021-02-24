@@ -24,7 +24,7 @@ pipeline {
 
         stage('build') {
             steps {
-                sh 'gradle jar'
+                sh 'gradle build'
 
             }
         }
