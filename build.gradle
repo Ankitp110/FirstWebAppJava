@@ -27,12 +27,12 @@ docker {
      files 'FirstWebApp.war'
 }
 
-dockerRun {
+/* dockerRun {
     name "FirstWebAppJava"
     image "firstwebapp:${project.version}"
     ports '8080:8080'
     clean true
-}
+} */
 
 allprojects {
     repositories {
@@ -47,7 +47,7 @@ apply plugin: 'com.jfrog.artifactory'
 apply plugin: 'java'
 apply plugin: 'maven-publish'
 apply plugin: 'war'
-apply plugin: "com.palantir.docker-run"
+//apply plugin: "com.palantir.docker-run"
 
 
 //sourceCompatibility = JavaVersion.VERSION_11
