@@ -12,7 +12,7 @@ plugins {
     // Apply the java plugin to add support for Java
     id 'war'
     id "com.palantir.docker" version "0.22.1"
-    id "com.palantir.docker-run" version "0.22.1"
+    //id "com.palantir.docker-run" version "0.22.1"
     //id 'org.gretty' version '3.0.3'
     //id 'jacoco'
     //id 'org.sonarqube' version '3.0'
