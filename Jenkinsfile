@@ -31,10 +31,16 @@ pipeline {
 
         stage('Building a Docker Image') {
             steps {
-                sh 'cp /var/jenkins_home/workspace/FirstWebApp/build/libs/FirstWebApp.war /var/jenkins_home/workspace/FirstWebApp/FirstWebApp.war  '
+                sh 'cp /var/jenkins_home/workspace/FirstWebApp/build/libs/FirstWebApp.war /var/jenkins_home/workspace/FirstWebApp/FirstWebApp.war'
                 sh 'gradle docker'
                 sh 'rm -rf FirstWebApp.war'
 
+            }
+        }
+
+        stage('Building a Docker Container') {
+            steps {   
+                sh 'gradle dockerRun'
             }
         }
 
