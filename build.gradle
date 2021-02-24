@@ -4,6 +4,7 @@ buildscript {
     }
     dependencies {
         classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '4.0.0')
+        classpath "com.palantir.gradle.docker:gradle-docker:0.26.0"
         
     }
 }
@@ -18,10 +19,10 @@ plugins {
     //id 'org.sonarqube' version '3.0'
 }
 
-/* docker {
+docker {
      name "${project.name}:${project.version}"
-     files 'FirstWebApp.jar'
-} */
+     files 'FirstWebApp.war'
+}
 
 allprojects {
     repositories {
@@ -37,6 +38,7 @@ apply plugin: 'com.jfrog.artifactory'
 apply plugin: 'java'
 apply plugin: 'maven-publish'
 apply plugin: 'war'
+//apply plugin: "com.palantir.docker-run"
 
 
 //sourceCompatibility = JavaVersion.VERSION_11

@@ -29,6 +29,13 @@ pipeline {
             }
         }
 
+        stage('Building a Docker Image') {
+            steps {
+                sh 'gradle docker'
+
+            }
+        }
+
         stage ('DeployArtifacts') {
             steps {
                 sh 'gradle artifactoryPublish'
