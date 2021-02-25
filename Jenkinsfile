@@ -44,12 +44,12 @@ pipeline {
             }
         } */
 
-        stage ('DeployArtifacts') {
+        /* stage ('DeployArtifacts') {
             steps {
                 sh 'gradle artifactoryPublish'
             }
 
-        } 
+        }  */
     }
 
 }

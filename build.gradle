@@ -7,7 +7,7 @@ buildscript {
     }
     dependencies {
         classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '4.0.0')
-        classpath "com.palantir.gradle.docker:gradle-docker:0.26.0"
+        //classpath "com.palantir.gradle.docker:gradle-docker:0.26.0"
         //classpath 'com.bmuschko:gradle-docker-plugin:4.3.0'
         
     }
@@ -16,8 +16,8 @@ buildscript {
 plugins {
     // Apply the java plugin to add support for Java
     id 'war'
-    id "com.palantir.docker" version "0.22.1"
-    id("com.palantir.docker-run") version "0.22.1"
+    //id "com.palantir.docker" version "0.22.1"
+    //id("com.palantir.docker-run") version "0.22.1"
     //id "com.palantir.docker-run" version "0.22.1"
     //id 'org.gretty' version '3.0.3'
     //id 'jacoco'
@@ -44,7 +44,7 @@ apply plugin: 'com.jfrog.artifactory'
 apply plugin: 'java'
 apply plugin: 'maven-publish'
 apply plugin: 'war'
-apply plugin: "com.palantir.docker-run"
+//apply plugin: "com.palantir.docker-run"
 //apply plugin: 'com.bmuschko.docker-remote-api'
 //apply plugin: 'com.bmuschko.docker-java-application'
 
