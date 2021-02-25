@@ -24,12 +24,12 @@ pipeline {
 
         stage('build') {
             steps {
-                sh 'gradle war'
+                sh 'gradle build'
 
             }
         }
 
-        stage('Building a Docker Image') {
+        /* stage('Building a Docker Image') {
             steps {
                 sh 'cp /var/jenkins_home/workspace/FirstWebApp/build/libs/FirstWebApp.war /var/jenkins_home/workspace/FirstWebApp/FirstWebApp.war'
                 sh 'gradle docker'
@@ -42,7 +42,7 @@ pipeline {
             steps {   
                 sh 'gradle dockerRun'
             }
-        }
+        } */
 
         stage ('DeployArtifacts') {
             steps {
