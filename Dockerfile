@@ -1,3 +1,3 @@
-FROM openjdk:12-jdk-alpine
-COPY FirstWebApp.war FirstWebApp.war
+FROM tomcat
+COPY FirstWebApp.war /usr/local/tomcat/webapps/
 #CMD ["java","-jar","FirstWebApp.jar"]
