@@ -52,6 +52,7 @@ dockerRun {
     image "my-java-app:${project.version}"
     ports '8090:8090'
     volumes '/var/run/docker.sock:/var/run/docker.sock'
+    clean true
 }  
 
 
