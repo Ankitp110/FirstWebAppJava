@@ -37,14 +37,14 @@ String dockerHubUsernameProperty = findProperty('dockerHubUsername') ?: 'ankitp1
 String imageName = "${dockerHubUsernameProperty}/FirstWebApp"
 
 docker {
-    name  java-web-app
-    files "FirstWebApp.war"
+    name  "java-web-app"
+    files 'FirstWebApp.war'
     //buildArgs([JAR_FILE: bootJar.archiveFileName.get()])
 }
 
 dockerRun {
-    name java-web-app-c
-    image java-web-app
+    name "java-web-app-c"
+    image "java-web-app"
     ports '8090:8090'
     clean true
 }
