@@ -48,7 +48,7 @@ String imageName = "${dockerHubUsernameProperty}/FirstWebApp"
 docker {
     name  "java-web-app"
     files 'FirstWebApp.war'
-    tag 'DockerHub', "ankitp110/first_web_app:${project.version}"
+    tag 'java-web-app', "ankitp110/first_web_app:${project.version}"
     //buildArgs([JAR_FILE: bootJar.archiveFileName.get()])
 }
 
