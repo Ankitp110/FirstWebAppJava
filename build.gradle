@@ -43,7 +43,7 @@ docker {
 }
 
 dockerRun {
-    name project.name
+    name java-web-app-c
     image java-web-app
     ports '8090:8090'
     clean true
