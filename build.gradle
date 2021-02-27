@@ -7,6 +7,11 @@ plugins {
     id 'com.palantir.docker-run' version '0.25.0'
 }
 
+bootJar {
+    baseName = 'java-web-app'
+    version =  '0.1.0'
+}
+
 //version = scmVersion.version
 //sourceCompatibility = 11
 
