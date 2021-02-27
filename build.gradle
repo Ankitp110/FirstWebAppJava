@@ -33,18 +33,18 @@ test {
     useJUnitPlatform()
 }
 
-String dockerHubUsernameProperty = findProperty('dockerHubUsername') ?: 'tkgregory'
-String imageName = "${dockerHubUsernameProperty}/spring-boot-api-example:$version"
+String dockerHubUsernameProperty = findProperty('dockerHubUsername') ?: 'ankitp110'
+String imageName = "${dockerHubUsernameProperty}/FirstWebApp"
 
 docker {
-    name imageName
-    files "build/libs/${bootJar.archiveFileName.get()}"
-    buildArgs([JAR_FILE: bootJar.archiveFileName.get()])
+    name  java-web-app
+    files "FirstWebApp.war"
+    //buildArgs([JAR_FILE: bootJar.archiveFileName.get()])
 }
 
 dockerRun {
     name project.name
-    image imageName
-    ports '8080:8080'
+    image java-web-app
+    ports '8090:8090'
     clean true
 }
