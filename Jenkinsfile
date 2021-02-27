@@ -44,6 +44,13 @@ pipeline {
                 sh 'gradle dockerRun'
             }
         }
+        
+        stage('build with docker') {
+            steps {
+                sh 'gradle build docker'
+
+            }
+        }
 
         /* stage ('DeployArtifacts') {
             steps {
