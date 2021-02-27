@@ -42,8 +42,8 @@ test {
     useJUnitPlatform()
 }
 
-String dockerHubUsernameProperty = findProperty('dockerHubUsername') ?: 'ankitp110'
-String imageName = "${dockerHubUsernameProperty}/java-web-app"
+//String dockerHubUsernameProperty = findProperty('dockerHubUsername') ?: 'ankitp110'
+//String imageName = "${dockerHubUsernameProperty}/java-web-app"
 
 docker {
     name  "java-web-app"
