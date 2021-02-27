@@ -16,7 +16,7 @@ jar {
     enabled = true
 }
 
-//version = '0.1.0'
+version = '0.1.0'
 //sourceCompatibility = 11
 
 repositories {
@@ -48,7 +48,7 @@ test {
 docker {
     name  "java-web-app"
     files 'FirstWebApp.war'
-    tag 'DockerHub', "java-web-app ankitp110/first_web_app"
+    tag 'DockerHub', "java-web-app ankitp110/first_web_app:${project.version}"
     //tag 'DockerHub', "java-web-app ankitp110/${project.version}"
     //buildArgs([JAR_FILE: bootJar.archiveFileName.get()])
 }
