@@ -48,7 +48,7 @@ test {
 docker {
     name  "java-web-app"
     files 'FirstWebApp.war'
-    tag 'DockerHub', "java-web-app https://hub.docker.com/repository/docker/ankitp110/first_web_app:firstimage"
+    tag 'DockerHub', "java-web-app ankitp110/first_web_app"
     //tag 'DockerHub', "java-web-app ankitp110/${project.version}"
     //buildArgs([JAR_FILE: bootJar.archiveFileName.get()])
 }
