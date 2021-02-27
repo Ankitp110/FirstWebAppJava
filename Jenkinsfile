@@ -52,7 +52,8 @@ pipeline {
             steps {
                 sh 'cp /var/jenkins_home/workspace/FirstWebApp/build/libs/FirstWebApp.war /var/jenkins_home/workspace/FirstWebApp/FirstWebApp.war'
                 sh 'docker login --username=$DOCKER_HUB_LOGIN_USR --password=$DOCKER_HUB_LOGIN_PSW'
-                sh 'docker push ankitp110/first_web_app:0.1.0'
+                sh 'docker tag java-web-app ankitp110/first_web_app'
+                sh 'docker push ankitp110/first_web_app' 
                 sh 'rm -rf FirstWebApp.war'
             }
         }
