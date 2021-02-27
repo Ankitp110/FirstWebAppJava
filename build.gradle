@@ -8,8 +8,11 @@ plugins {
 }
 
 bootJar {
-    baseName = 'java-web-app'
-    version =  '0.1.0'
+    enabled = false
+}
+
+jar {
+    enabled = true
 }
 
 //version = scmVersion.version
